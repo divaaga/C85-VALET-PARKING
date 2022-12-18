@@ -19,7 +19,7 @@ function add() {
     background_img.onload = uploadBackground;
     background_img.src = background_image;
 
-    greencar_image = new Image();
+    greencar_img = new Image();
     greencar_img.onload = uploadgreencar;
     greencar_img.src = greencar_image;
 }
