@@ -9,7 +9,7 @@ greencar_image = "car2.png";
 greencar_width = 90;
 greencar_height = 90;
 greencar_x = 10;
-greencar_x = 10;
+greencar_y = 200;
 
 //Set initial position for a car image.
 
@@ -31,7 +31,7 @@ function uploadBackground() {
 
 function uploadgreencar() {
 	//Define function ‘uploadgreencar’.
-	ctx.drawImage(greencar_image,greencar_x,greencar_x,greencar_width,greencar_height);
+	ctx.drawImage(greencar_image,greencar_x,greencar_y,greencar_width,greencar_height);
 }
 
 
@@ -93,7 +93,7 @@ function down()
 function left()
 {
 	//Define function to move the car left side
-	if (rover_x >= 0) {
+	if (greencar_x >= 0) {
         greencar_x = greencar_x - 10;
         console.log("When LEFT arrow is pressed, X = " + greencar_x + " | Y = " + greencar_y);
         uploadBackground();
